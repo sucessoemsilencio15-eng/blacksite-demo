@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BlackSite Studio</title>
+
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+body { font-family: 'Inter', sans-serif; background: #0a0a0a; }
+
+/* animação */
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
+</head>
+
+<body class="text-white">
+
+<!-- TOP BANNER -->
+<div class="bg-white text-black text-center py-2 text-xs font-bold uppercase">
+🚀 International Website Studio • Accepting Global Clients
+</div>
+
+<!-- NAV -->
+<nav class="flex justify-between items-center p-6">
+    <h1 class="text-xl font-black uppercase">BlackSite</h1>
+    <a href="#contact" class="border px-4 py-2 rounded-xl text-sm hover:bg-white hover:text-black transition">
+        Contact
+    </a>
+</nav>
+
+<!-- HERO -->
+<section class="text-center px-6 py-16 fade-up">
+    <h1 class="text-4xl font-black uppercase leading-tight">
+        Websites That <br> Make You Money
+    </h1>
+
+    <p class="mt-4 text-gray-400 text-sm max-w-md mx-auto">
+        I build high-converting landing pages designed to increase sales and grow your business.
+    </p>
+
+    <a href="#portfolio" class="mt-6 inline-block bg-white text-black px-6 py-3 rounded-xl font-bold text-sm uppercase">
+        View My Work
+    </a>
+</section>
+
+<!-- ABOUT -->
+<section class="px-6 py-10 text-center fade-up">
+    <h2 class="text-xl font-bold uppercase mb-3">About BlackSite</h2>
+
+    <p class="text-gray-400 text-sm max-w-md mx-auto">
+        BlackSite is a Brazilian international web studio focused on creating modern, fast and high-converting websites.
+        Every page is designed to turn visitors into customers.
+    </p>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="px-6 py-10 fade-up">
+    <h2 class="text-xl font-bold uppercase mb-6 text-center">
+        Demo Website Models
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+        <!-- FASHION -->
+        <div class="bg-white text-black rounded-2xl overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h3 class="font-bold">Fashion Store</h3>
+                <p class="text-xs text-gray-500 mt-1">
+                    Perfect for clothing brands. Designed to increase product sales and customer engagement.
+                </p>
+            </div>
+        </div>
+
+        <!-- RESTAURANT -->
+        <div class="bg-white text-black rounded-2xl overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h3 class="font-bold">Restaurant</h3>
+                <p class="text-xs text-gray-500 mt-1">
+                    Ideal for restaurants and delivery services. Helps attract customers and increase orders.
+                </p>
+            </div>
+        </div>
+
+        <!-- FITNESS -->
+        <div class="bg-white text-black rounded-2xl overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?w=600" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h3 class="font-bold">Fitness</h3>
+                <p class="text-xs text-gray-500 mt-1">
+                    Great for personal trainers and gyms. Converts visitors into paying clients.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="px-6 py-16 text-center fade-up">
+    <h2 class="text-2xl font-black uppercase">
+        Why Choose BlackSite?
+    </h2>
+
+    <div class="mt-6 flex flex-wrap justify-center gap-4 text-xs">
+        <span class="border px-4 py-2 rounded-xl">High Conversion</span>
+        <span class="border px-4 py-2 rounded-xl">Modern Design</span>
+        <span class="border px-4 py-2 rounded-xl">Mobile Optimized</span>
+        <span class="border px-4 py-2 rounded-xl">Fast Delivery</span>
+    </div>
+</section>
+
+<!-- PAYMENT -->
+<section class="text-center px-6 py-10 fade-up">
+    <h2 class="font-bold uppercase">Global Payment</h2>
+    <p class="text-gray-400 text-sm mt-2">
+        We accept international payments via Wise and other global platforms.
+    </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="text-center pb-20 fade-up">
+
+    <a href="https://wa.me/5500000000000"
+       class="bg-white text-black px-8 py-4 rounded-xl font-bold uppercase text-sm">
+        Order via WhatsApp
+    </a>
+
+    <p class="text-gray-500 text-xs mt-4">
+        Instagram: @blacksite
+    </p>
+
+</section>
+
+<script>
+const elements = document.querySelectorAll('.fade-up');
+
+window.addEventListener('scroll', () => {
+    elements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 50) {
+            el.classList.add('show');
+        }
+    });
+});
+</script>
+
+</body>
+</html>
