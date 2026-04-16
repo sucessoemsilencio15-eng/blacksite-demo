@@ -1,0 +1,89 @@
+<!DOCTYPE html>  <html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Compact Premium Store</title>  
+    <script src="https://cdn.tailwindcss.com"></script>  
+    <script src="https://unpkg.com/lucide@latest"></script>  
+    <style>  
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');  
+        body { font-family: 'Inter', sans-serif; background-color: #f3f4f6; }  
+        .product-card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); transition: transform 0.2s; }  
+        .product-card:active { transform: scale(0.98); }  
+        .product-img { width: 100%; aspect-ratio: 1/1; object-fit: cover; }  
+    </style>  
+</head>  
+<body class="pb-10">  <nav class="bg-white px-6 py-4 flex justify-between items-center sticky top-0 z-50 shadow-sm">  
+    <h1 class="text-xl font-black tracking-tighter uppercase">Shop<span class="text-blue-600">X</span></h1>  
+    <div class="bg-gray-100 p-2 rounded-full">  
+        <i data-lucide="shopping-cart" class="w-5 h-5"></i>  
+    </div>  
+</nav>  
+
+<div class="bg-black text-white py-3 px-6">  
+    <p class="text-[10px] font-bold tracking-[0.2em] text-center uppercase">New Season Drop 2026 • Limited Units</p>  
+</div>  
+
+<main class="p-4 grid grid-cols-2 gap-4">  
+      
+    <div class="product-card">  
+        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=500" class="product-img">  
+        <div class="p-3">  
+            <h3 class="text-[11px] font-bold text-gray-800 uppercase leading-tight h-8 line-clamp-2">White Classic Essential Tee</h3>  
+            <p class="text-lg font-black mt-1">$45.00</p>  
+            <a href="https://wa.me/5500000000000" class="mt-3 w-full bg-black text-white py-3 rounded-xl text-[10px] font-extrabold uppercase flex justify-center items-center gap-2">  
+                <i data-lucide="message-circle" class="w-3 h-3 text-blue-400"></i> Buy Now  
+            </a>  
+        </div>  
+    </div>  
+
+    <div class="product-card">  
+        <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?q=80&w=500" class="product-img">  
+        <div class="p-3">  
+            <h3 class="text-[11px] font-bold text-gray-800 uppercase leading-tight h-8 line-clamp-2">Premium Shadow Hoodie</h3>  
+            <p class="text-lg font-black mt-1">$89.00</p>  
+            <a href="https://wa.me/5500000000000" class="mt-3 w-full bg-black text-white py-3 rounded-xl text-[10px] font-extrabold uppercase flex justify-center items-center gap-2">  
+                <i data-lucide="message-circle" class="w-3 h-3 text-blue-400"></i> Buy Now  
+            </a>  
+        </div>  
+    </div>  
+
+    <div class="product-card">  
+        <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?q=80&w=500" class="product-img">  
+        <div class="p-3">  
+            <h3 class="text-[11px] font-bold text-gray-800 uppercase leading-tight h-8 line-clamp-2">Urban Streetwear Denim</h3>  
+            <p class="text-lg font-black mt-1">$120.00</p>  
+            <a href="https://wa.me/5500000000000" class="mt-3 w-full bg-black text-white py-3 rounded-xl text-[10px] font-extrabold uppercase flex justify-center items-center gap-2">  
+                <i data-lucide="message-circle" class="w-3 h-3 text-blue-400"></i> Buy Now  
+            </a>  
+        </div>  
+    </div>  
+
+    <div class="product-card">  
+        <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=500" class="product-img">  
+        <div class="p-3">  
+            <h3 class="text-[11px] font-bold text-gray-800 uppercase leading-tight h-8 line-clamp-2">Graphic Art Collection</h3>  
+            <p class="text-lg font-black mt-1">$50.00</p>  
+            <a href="https://wa.me/5500000000000" class="mt-3 w-full bg-black text-white py-3 rounded-xl text-[10px] font-extrabold uppercase flex justify-center items-center gap-2">  
+                <i data-lucide="message-circle" class="w-3 h-3 text-blue-400"></i> Buy Now  
+            </a>  
+        </div>  
+    </div>  
+
+</main>  
+
+<footer class="mt-10 px-6 text-center">  
+    <p class="text-[9px] text-gray-400 uppercase tracking-widest font-bold">Secure Checkout via WhatsApp</p>  
+    <div class="flex justify-center gap-4 mt-4 opacity-20">  
+        <i data-lucide="shield-check"></i>  
+        <i data-lucide="truck"></i>  
+        <i data-lucide="credit-card"></i>  
+    </div>  
+</footer>  
+
+<script>  
+    lucide.createIcons();  
+</script>
+
+</body>  
+</html>  
