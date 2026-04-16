@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>BlackSite Studio</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
@@ -11,69 +10,79 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 
 <style>
-body { font-family: 'Inter', sans-serif; background: #000; color: white; }
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0a0a0a;
+    color: white;
+    scroll-behavior: smooth;
+}
 </style>
 </head>
 
 <body>
 
 <!-- TOP BAR -->
-<div class="bg-white text-black text-center py-2 text-xs font-bold">
-🚀 International Website Studio
+<div class="text-center text-xs py-2 bg-white text-black font-bold tracking-widest">
+🚀 BRAZILIAN INTERNATIONAL STUDIO • ACCEPTING GLOBAL CLIENTS
 </div>
 
 <!-- HERO -->
-<section class="text-center px-6 py-16">
-    <h1 class="text-4xl font-black uppercase">
-        BlackSite
-    </h1>
-
-    <p class="mt-4 text-gray-400 text-sm max-w-md mx-auto">
+<section class="text-center py-20 px-6">
+    <h1 class="text-5xl font-black mb-4">BLACKSITE</h1>
+    <p class="text-gray-400 max-w-md mx-auto">
         High-converting websites designed to make you money.
     </p>
 
-    <a href="#portfolio" class="mt-6 inline-block bg-white text-black px-6 py-3 rounded-xl font-bold text-sm">
+    <a href="#models" class="mt-8 inline-block bg-white text-black px-8 py-4 rounded-xl font-bold">
         View Work
     </a>
 </section>
 
-<!-- PORTFOLIO -->
-<section id="portfolio" class="px-6 py-10">
+<!-- ABOUT -->
+<section class="px-6 text-center max-w-xl mx-auto mb-20">
+    <h2 class="text-2xl font-bold mb-4">About BlackSite</h2>
+    <p class="text-gray-400">
+        BlackSite is a Brazilian international web studio focused on creating modern,
+        fast and high-converting websites. Every page is designed to turn visitors into buyers.
+    </p>
+</section>
 
-    <h2 class="text-center text-xl font-bold mb-6">
-        Demo Models
-    </h2>
+<!-- MODELS -->
+<section id="models" class="px-6 mb-20">
+    <h2 class="text-2xl font-bold text-center mb-8">Demo Models</h2>
 
-    <div class="grid grid-cols-1 gap-6">
+    <!-- FASHION -->
+    <div onclick="alert('Fashion demo coming soon')" 
+         class="bg-white text-black p-6 rounded-xl mb-4 cursor-pointer hover:scale-105 transition">
+        <h3 class="font-bold text-lg">Fashion Store</h3>
+        <p>Perfect for selling clothes online.</p>
+    </div>
 
-        <div class="bg-white text-black p-4 rounded-xl">
-            <h3 class="font-bold">Fashion Store</h3>
-            <p class="text-sm text-gray-500">
-                Perfect for selling clothes online.
-            </p>
-        </div>
+    <!-- RESTAURANT -->
+    <div class="bg-gray-800 p-6 rounded-xl mb-4 opacity-60">
+        <h3 class="font-bold text-lg">Restaurant</h3>
+        <p>Great for delivery and menus.</p>
+    </div>
 
-        <div class="bg-white text-black p-4 rounded-xl">
-            <h3 class="font-bold">Restaurant</h3>
-            <p class="text-sm text-gray-500">
-                Great for delivery and menus.
-            </p>
-        </div>
-
-        <div class="bg-white text-black p-4 rounded-xl">
-            <h3 class="font-bold">Fitness</h3>
-            <p class="text-sm text-gray-500">
-                Ideal for trainers and gyms.
-            </p>
-        </div>
-
+    <!-- FITNESS -->
+    <div class="bg-gray-800 p-6 rounded-xl">
+        <h3 class="font-bold text-lg">Fitness</h3>
+        <p>Ideal for trainers and gyms.</p>
     </div>
 </section>
 
 <!-- CONTACT -->
-<section class="text-center py-10">
-    <a href="https://wa.me/5500000000000" class="bg-white text-black px-6 py-3 rounded-xl font-bold">
-        Contact Me
+<section class="text-center pb-20">
+    <h2 class="text-xl font-bold mb-4">Work With Me</h2>
+
+    <p class="text-gray-400 mb-6">
+        Payments via Wise • International clients welcome
+    </p>
+
+    <a href="https://www.instagram.com/blacksite_studio?igsh=MWpybGpxZnprbDNrdw==" 
+       target="_blank"
+       class="bg-white text-black px-8 py-4 rounded-xl font-bold hover:scale-105 transition">
+       Contact on Instagram
     </a>
 </section>
 
